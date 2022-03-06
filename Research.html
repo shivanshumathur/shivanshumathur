@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shivanshu Mathur</title>
+    <link rel="icon" href="images/ShivanshuLogoGolden.png" type="image/icon type">
 </head>
 <body>
+<section class="bg-white dark:bg-white-800">
+        <nav class="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="homepage.html"><img class="object-scale-down h-12 w-24" src="images/LogoBlack.png" ></a>
+                </div>
 
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden">
+                    <button type="button"
+                        class="text-black-500 hover:text-black-600 focus:outline-none focus:text-black-600"
+                        aria-label="toggle menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div class="flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
+                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                    href="About.html">😎 About Me</a>
+                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                    href="Designs.html">🧑‍💻 Designs</a>
+                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                    href="#">🧐 Research Projects</a>
+                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                    href="Achievements.html">🏆 Achievements</a>
+            </div>
+        </nav>
+</section>
+
+<section class="bg-white dark:bg-white-800 body-font">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-gray">To find ideas, find problems.</h1>
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-gray">To find problems, talk to people.</h1>
+            <div class="flex justify-center mx-auto mt-6">
+                <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+            </div>
+        </div>
+</section>
 </body>
 </html>
