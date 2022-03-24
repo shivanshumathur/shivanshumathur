@@ -18,7 +18,7 @@
                 <!-- Mobile menu button -->
                 <div class="flex lg:hidden">
                     <button type="button"
-                        class="text-black-500 hover:text-black-600 focus:outline-none focus:text-black-600"
+                        class="mobile-menu-button text-black-500 hover:text-black-600 focus:outline-none focus:text-black-600"
                         aria-label="toggle menu">
                         <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                             <path fill-rule="evenodd"
@@ -30,16 +30,23 @@
             </div>
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div class="flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
-                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+            <div class="hidden mobile-menu md:flex flex-col mt-4 space-y-2 lg:-mx-6 lg:mt-0 lg:flex-row lg:space-y-0">
+                <a class="block text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
                     href="About.html">😎 About Me</a>
-                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                <a class="block text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
                     href="Designs.html">🧑‍💻 Designs</a>
-                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                <a class="block text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
                     href="#">🧐 Research Projects</a>
-                <a class="text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
+                <a class="block text-black-700 dark:text-black-200 lg:px-6 dark:hover:text-blue-400 hover:text-blue-500"
                     href="Achievements.html">🏆 Achievements</a>
             </div>
+            <script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
         </nav>
 </section>
 
